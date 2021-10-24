@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  countrythunder.lineup.rsvp.monitor:
+    image: ${DOCKER_REGISTRY-}countrythunderlineuprsvpmonitor
+    build:
+      context: .
+      dockerfile: CountryThunder.Lineup.RSVP.Monitor/Dockerfile
